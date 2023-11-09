@@ -14,7 +14,7 @@ Welcome to the GitHub repository for my personal portfolio website. This website
 This section of the website provides a brief introduction to me. It includes information about my background, skills, and what I am passionate about. You can find more details about me on the website itself.
 
 ## Projects
-On my portfolio website, I have featured some of my notable projects. Each project is listed with a brief description, and you can click on them to view more details, including code repositories, live demos, and case studies. I believe that my work is a testament to my skills and expertise, so please feel free to explore these projects.
+On my portfolio website, I have featured some of my notable projects. Each project is listed, and you can click on them to view more details, including code repositories, live demos, and case studies. I believe that my work is a testament to my skills and expertise, so please feel free to explore these projects.
 
 ## Resume
 My resume is available on the website, and you can download it in PDF format. It contains details about my education, work experience, skills, and achievements. If you're interested in my professional background, please take a look at my resume.
