@@ -23,7 +23,7 @@ My resume is available on the website, and you can download it in PDF format. It
 ## Contact
 If you would like to get in touch with me, you can find my contact information on the website. I'm open to collaboration, job opportunities, or just a friendly chat, so don't hesitate to reach out. You can connect with me through the following channels:
 - Email: uthayasuriyan.a@northeastern.edu
-- LinkedIn: [Agash Uthayasuriyan](https://www.linkedin.com/in/your-profile)
+- LinkedIn: [Agash Uthayasuriyan](https://www.linkedin.com/in/agash-uthayasuriyan)
 
 Feel free to explore my portfolio website and get to know me better. I'm always eager to connect with like-minded individuals, so please don't hesitate to reach out. Thank you for visiting my GitHub repository!
 
