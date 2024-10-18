@@ -1,6 +1,6 @@
 {
   "name": "agash912.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Welcome to the GitHub repository for my personal portfolio website. This website serves as a showcase of my work, provides information about me, includes my resume, and offers ways to contact me.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
