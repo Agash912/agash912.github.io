@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to the GitHub repository for my personal portfolio website. This website serves as a showcase of my work, provides information about me, includes my resume, and offers ways to contact me.
+Welcome to the GitHub repository for my personal portfolio website. This website serves as a showcase of my work, provides information about me, includes my resume, and contact information.
 
 <img width="1440" alt="image" src="https://github.com/Agash912/agash912.github.io/assets/112348271/5b942ed6-a4da-4db0-a304-fa138dec4807">
 
