@@ -18,7 +18,7 @@ This section of the website provides a brief introduction to me. It includes inf
 On my portfolio website, I have featured some of my notable projects. Each project is listed, and you can click on them to view more details, including code repositories, live demos, and case studies. I believe that my work is a testament to my skills and expertise, so please feel free to explore these projects.
 
 ## Resume
-My resume is available on the website, and you can download it in PDF format. It contains details about my education, work experience, skills, and achievements. If you're interested in my professional background, please take a look at my resume.
+The resume section contains details about my education, work experience, skills, and achievements. If you're interested in my professional background, please take a look at my resume.
 
 ## Contact
 If you would like to get in touch with me, you can find my contact information on the website. I'm open to collaboration, job opportunities, or just a friendly chat, so don't hesitate to reach out. You can connect with me through the following channels:
