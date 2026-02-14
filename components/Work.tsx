@@ -9,14 +9,14 @@ import {
 const papers = [
   {
     title:
-      "Hybridizing DE with Deep Reinforcement Learning for Influence Maximization",
+      "Hybridizing Differential Evolution with Deep Reinforcement Learning",
     desc: "Combined evolutionary search with deep RL for NP-hard seed set optimization.",
     link: "https://oaji.net/articles/2023/3603-1719547116.pdf",
   },
   {
     title: "Evolving XGBoost Hyperparameters for Link Prediction",
-    desc: "Differential Evolution over XGBoost\u2019s config space \u2014 better accuracy, no grid search.",
-    link: "https://oaji.net/articles/2023/3603-1719547116.pdf",
+    desc: "Differential Evolution over XGBoost\u2019s config space. Better accuracy, no grid search.",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-28180-8_11",
   },
   {
     title: "Flow Pattern Prediction in Two-Phase Liquids",
@@ -24,18 +24,18 @@ const papers = [
     link: "https://ojs.srce.hr/rgn/article/view/29467",
   },
   {
-    title: "Benchmarking EA on NP-Hard Influence Maximization",
+    title: "Evaluation of Evolutionary Algorithms on Solving the Influence Maximization",
     desc: "Systematic evaluation of evolutionary metaheuristics on large-scale networks.",
-    link: "https://doi.org/10.1007/978-3-031-28180-8_11",
+    link: "https://mecs-press.net/ijmecs/ijmecs-v16-n2/v16n2-7.html",
   },
   {
     title: "Genetic Algorithms vs. Reinforcement Learning",
     desc: "Two optimization paradigms head-to-head. Where each wins, where assumptions break.",
-    link: "https://mecs-press.net/ijmecs/ijmecs-v16-n2/IJMECS-V16-N2-7.pdf",
+    link: "https://ojs.wiserpub.com/index.php/RRCS/article/view/2642/1334",
   },
   {
     title: "Influence Propagation Models in Social Networks",
-    desc: "Evaluating IC, LT, and variants \u2014 which propagation assumptions hold at scale.",
+    desc: "Evaluating IC, LT, and variants. Which propagation assumptions hold at scale.",
     link: "https://doi.org/10.1109/InCACCT57535.2023.10141772",
   },
 ];
@@ -89,7 +89,7 @@ const Arrow = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="text-text-muted/30 group-hover:text-text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
+    className="text-fg-muted/30 group-hover:text-fg-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
   >
     <path d="M7 17L17 7M17 7H7M17 7V17" />
   </svg>
@@ -107,10 +107,10 @@ function SectionHeader({
   return (
     <AnimatedSection>
       <div className="flex items-center gap-3 mb-2">
-        <span className="font-mono text-[11px] text-text-muted/40 tabular-nums">
+        <span className="font-mono text-[13px] text-fg-secondary tabular-nums">
           {number}
         </span>
-        <span className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-muted/60">
+        <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-fg-primary">
           {label}
         </span>
       </div>
@@ -126,7 +126,7 @@ export function Work() {
         {/* Research */}
         <div id="research" className="mb-24 sm:mb-32">
           <SectionHeader number="01" label="Research">
-            <p className="text-[15px] text-text-muted leading-relaxed mb-8 max-w-lg">
+            <p className="text-[17px] text-fg-muted leading-relaxed mb-8 max-w-lg">
               How do you make ML algorithms work better? Not more data, not
               bigger models. Better mechanics.
             </p>
@@ -139,13 +139,13 @@ export function Work() {
                   href={paper.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-start justify-between gap-6 py-4 border-b border-white/[0.06]"
+                  className="group flex items-start justify-between gap-6 py-4 border-b border-[var(--divider)]"
                 >
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[15px] font-medium text-text-primary/90 leading-snug group-hover:text-text-primary transition-colors duration-200">
+                    <h3 className="text-[17px] font-medium text-fg-primary leading-snug group-hover:text-fg-primary transition-colors duration-200">
                       {paper.title}
                     </h3>
-                    <p className="text-[13px] text-text-muted leading-relaxed mt-1.5">
+                    <p className="text-[15px] text-fg-muted leading-relaxed mt-1.5">
                       {paper.desc}
                     </p>
                   </div>
@@ -161,13 +161,13 @@ export function Work() {
         {/* Ventures */}
         <div id="ventures">
           <SectionHeader number="02" label="Ventures">
-            <p className="text-[15px] text-text-muted leading-relaxed mb-8 max-w-lg">
+            <p className="text-[17px] text-fg-muted leading-relaxed mb-8 max-w-lg">
               Building products with{" "}
               <a
                 href="https://kirankannan.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-secondary hover:text-text-primary transition-colors duration-200 underline decoration-white/[0.15] underline-offset-[3px]"
+                className="text-fg-secondary hover:text-fg-primary transition-colors duration-200 underline decoration-[var(--divider-strong)] underline-offset-[3px]"
               >
                 Kiran
               </a>{" "}
@@ -176,7 +176,7 @@ export function Work() {
                 href="https://portfolio.zezekay.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-secondary hover:text-text-primary transition-colors duration-200 underline decoration-white/[0.15] underline-offset-[3px]"
+                className="text-fg-secondary hover:text-fg-primary transition-colors duration-200 underline decoration-[var(--divider-strong)] underline-offset-[3px]"
               >
                 Dharun
               </a>
@@ -190,16 +190,16 @@ export function Work() {
           >
             {ventures.map((v) => {
               const card = (
-                <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] p-5 hover:border-white/[0.1] hover:bg-white/[0.04] hover:-translate-y-0.5 transition-all duration-300 h-full">
+                <div className="group rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] p-5 hover:border-[var(--card-border-hover)] hover:bg-[var(--card-hover-bg)] hover:-translate-y-0.5 transition-all duration-300 h-full">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2.5">
-                      <h3 className="text-[15px] sm:text-base font-medium text-text-primary/90 group-hover:text-text-primary transition-colors duration-200">
+                      <h3 className="text-[17px] sm:text-lg font-medium text-fg-primary group-hover:text-fg-primary transition-colors duration-200">
                         {v.name}
                       </h3>
                       {v.live && (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[var(--emerald-bg)] border border-[var(--emerald-border)]">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                          <span className="font-mono text-[9px] tracking-wider text-emerald-400/80">
+                          <span className="font-mono text-[11px] tracking-wider text-emerald-400/80">
                             LIVE
                           </span>
                         </span>
@@ -211,7 +211,7 @@ export function Work() {
                       </div>
                     )}
                   </div>
-                  <p className="text-[13px] text-text-muted leading-relaxed">
+                  <p className="text-[15px] text-fg-muted leading-relaxed">
                     {v.desc}
                   </p>
                 </div>

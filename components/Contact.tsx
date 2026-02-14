@@ -13,11 +13,6 @@ const links = [
     value: "agash-uthayasuriyan",
     href: "https://www.linkedin.com/in/agash-uthayasuriyan/",
   },
-  {
-    label: "GitHub",
-    value: "Agash912",
-    href: "https://github.com/Agash912",
-  },
 ];
 
 export function Contact() {
@@ -26,15 +21,15 @@ export function Contact() {
       <div className="max-w-3xl mx-auto px-6">
         <AnimatedSection>
           <div className="flex items-center gap-3 mb-2">
-            <span className="font-mono text-[11px] text-text-muted/40 tabular-nums">
+            <span className="font-mono text-[13px] text-fg-secondary tabular-nums">
               03
             </span>
-            <span className="text-[11px] font-medium tracking-[0.2em] uppercase text-text-muted/60">
+            <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-fg-primary">
               Contact
             </span>
           </div>
-          <p className="text-[15px] text-text-muted mb-8">
-            Always happy to chat.
+          <p className="text-[17px] text-fg-muted mb-8">
+            Always happy to chat!
           </p>
         </AnimatedSection>
 
@@ -46,13 +41,13 @@ export function Contact() {
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between py-4 border-b border-white/[0.06]"
+                className="group flex items-center justify-between py-4 border-b border-[var(--divider)]"
               >
                 <div className="flex items-center gap-6">
-                  <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-text-muted/40 w-16">
+                  <span className="font-mono text-[12px] tracking-[0.15em] uppercase text-fg-secondary w-16">
                     {link.label}
                   </span>
-                  <span className="text-[15px] text-text-secondary group-hover:text-text-primary transition-colors duration-200">
+                  <span className="text-[17px] text-fg-primary group-hover:text-fg-primary transition-colors duration-200">
                     {link.value}
                   </span>
                 </div>
@@ -65,7 +60,7 @@ export function Contact() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-text-muted/30 group-hover:text-text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
+                  className="text-fg-muted/30 group-hover:text-fg-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
                 >
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>

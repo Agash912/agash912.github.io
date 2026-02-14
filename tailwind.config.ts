@@ -5,6 +5,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -12,19 +13,19 @@ const config: Config = {
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       colors: {
+        bg: "rgb(var(--bg) / <alpha-value>)",
         surface: {
-          DEFAULT: "#111114",
-          elevated: "#18181c",
-          hover: "#1f1f24",
+          DEFAULT: "rgb(var(--surface) / <alpha-value>)",
+          elevated: "rgb(var(--surface-elevated) / <alpha-value>)",
         },
         border: {
-          DEFAULT: "#1a1a1f",
-          hover: "#2a2a30",
+          DEFAULT: "rgb(var(--border) / <alpha-value>)",
+          hover: "rgb(var(--border-hover) / <alpha-value>)",
         },
-        text: {
-          primary: "#ededef",
-          secondary: "#a0a0ab",
-          muted: "#5c5c66",
+        fg: {
+          primary: "rgb(var(--text-primary) / <alpha-value>)",
+          secondary: "rgb(var(--text-secondary) / <alpha-value>)",
+          muted: "rgb(var(--text-muted) / <alpha-value>)",
         },
       },
       letterSpacing: {

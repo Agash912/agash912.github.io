@@ -12,7 +12,7 @@ export default function Home() {
         className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px]"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(255,255,255,0.035) 0%, transparent 70%)",
+            "radial-gradient(ellipse at center, var(--glow) 0%, transparent 70%)",
         }}
       />
 

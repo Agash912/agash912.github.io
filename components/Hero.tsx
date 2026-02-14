@@ -21,22 +21,22 @@ export function Hero() {
 
         <motion.p
           {...fade(0.3)}
-          className="text-lg sm:text-xl text-text-secondary leading-relaxed mb-16 max-w-xl"
+          className="text-xl sm:text-2xl text-fg-secondary leading-relaxed mb-16 max-w-xl"
         >
           I design and build data intensive systems.{" "}
-          <span className="text-text-muted">
+          <span className="text-fg-muted">
             Starting with the problem, not the tool.
           </span>
         </motion.p>
 
         <motion.div
           {...fade(0.4)}
-          className="h-px w-12 bg-white/[0.15] mb-10"
+          className="h-px w-12 bg-[var(--divider-strong)] mb-10"
         />
 
-        <div className="max-w-lg space-y-4 text-[15px] text-text-muted leading-[1.85]">
+        <div className="max-w-lg space-y-4 text-[17px] text-fg-muted leading-[1.85]">
           <motion.p {...fade(0.48)}>
-            Data engineering, analytics, ML, AI — I work across the full stack.
+            Data engineering, analytics, ML, AI. I work across the full stack.
             Architecture-level, not surface-level. Design for fault tolerance
             and loose coupling, then choose the tools.
           </motion.p>

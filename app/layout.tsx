@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,32 +16,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agash Uthayasuriyan — CTO, Researcher, Data Engineer",
-  description:
-    "CTO & Co-Founder building 6 products across AI and SaaS. 6 published research papers advancing ML algorithms. Northeastern Laurel & Scroll Award nominee.",
-  keywords: [
-    "Agash Uthayasuriyan",
-    "CTO",
-    "AI Engineer",
-    "Data Engineer",
-    "Machine Learning",
-    "Research",
-    "Founder",
-  ],
-  authors: [{ name: "Agash Uthayasuriyan" }],
-  openGraph: {
-    title: "Agash Uthayasuriyan — CTO, Researcher, Data Engineer",
-    description:
-      "CTO & Co-Founder building 6 products across AI and SaaS. 6 published research papers. Northeastern Laurel & Scroll Award nominee.",
-    type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Agash Uthayasuriyan — CTO, Researcher, Data Engineer",
-    description:
-      "CTO & Co-Founder building 6 products across AI and SaaS. 6 published research papers.",
-  },
+  title: "Agash Uthayasuriyan",
 };
 
 export default function RootLayout({
@@ -49,8 +25,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
-      <body className="font-sans">{children}</body>
+    <html lang="en" className={`${inter.variable} ${mono.variable} dark`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.remove('dark')}else{document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body className="font-sans">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
