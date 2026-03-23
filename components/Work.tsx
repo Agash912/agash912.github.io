@@ -15,7 +15,7 @@ const papers = [
   },
   {
     title: "Evolving XGBoost Hyperparameters for Link Prediction",
-    desc: "Differential Evolution over XGBoost\u2019s config space. Better accuracy, no grid search.",
+    desc: "Differential Evolution over XGBoost's config space. Better accuracy, no grid search.",
     link: "https://link.springer.com/chapter/10.1007/978-3-031-28180-8_11",
   },
   {
@@ -43,53 +43,41 @@ const papers = [
 const ventures = [
   {
     name: "Nedil AI",
-    desc: "Real-time AI voice translation. On the App Store.",
+    desc: "Real-time voice translation. Speak in your language, hear it back in 20+ others. Whisper, GPT-4, ElevenLabs. Live on the App Store.",
     live: true,
     link: "https://apps.apple.com/us/app/nedil-ai/id6738028938",
   },
   {
-    name: "Highten AI",
-    desc: "Describe a SaaS idea in plain English. Get the app, billing, analytics.",
+    name: "ZeninAI",
+    desc: "AI voice agent that makes phone calls on your behalf. Appointments, reservations, inquiries. LangGraph + ElevenLabs + Twilio.",
     live: false,
-    link: "https://highten.ink",
-  },
-  {
-    name: "Alpha Channel",
-    desc: "Product screenshots in, cinematic launch video out. Seconds, not weeks.",
-    live: false,
-    link: null,
-  },
-  {
-    name: "Poligovern",
-    desc: "Open-source AI governance. Policy as code, PII redaction, audit trails.",
-    live: false,
-    link: null,
-  },
-  {
-    name: "Spectra AI",
-    desc: "Plain English to valid SysML v2 models, diagrams, and compliance docs.",
-    live: false,
-    link: null,
+    link: "https://github.com/TheStartUp-ADK/Voro",
   },
   {
     name: "Voro AI",
-    desc: "AI agent that sees your screen and acts through natural language.",
+    desc: "AI desktop automation. Describe what you want in plain English, it sees your screen, plans the steps, and executes. Works on any app.",
     live: false,
-    link: null,
+    link: "https://kirankannan.com/Voro%20AI/Voro_OnePager.pdf",
+  },
+  {
+    name: "Poligovern",
+    desc: "Open-source AI governance library. PII redaction before LLM calls, policy as code, audit trails to your data warehouse.",
+    live: false,
+    link: "https://kirankannan.com/Poligovern/Poligovern_PitchDeck.pdf",
   },
 ];
 
 const Arrow = () => (
   <svg
-    width="14"
-    height="14"
+    width="15"
+    height="15"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="text-fg-muted/30 group-hover:text-fg-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
+    className="text-fg-muted/30 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
   >
     <path d="M7 17L17 7M17 7H7M17 7V17" />
   </svg>
@@ -107,10 +95,10 @@ function SectionHeader({
   return (
     <AnimatedSection>
       <div className="flex items-center gap-3 mb-2">
-        <span className="font-mono text-[13px] text-fg-secondary tabular-nums">
+        <span className="font-mono text-sm text-accent/60 tabular-nums">
           {number}
         </span>
-        <span className="text-[13px] font-medium tracking-[0.2em] uppercase text-fg-primary">
+        <span className="text-sm font-medium tracking-[0.2em] uppercase text-fg-primary">
           {label}
         </span>
       </div>
@@ -124,11 +112,11 @@ export function Work() {
     <section className="pb-24 sm:pb-32">
       <div className="max-w-3xl mx-auto px-6">
         {/* Research */}
-        <div id="research" className="mb-24 sm:mb-32">
+        <div id="research" className="mb-20 sm:mb-28">
           <SectionHeader number="01" label="Research">
-            <p className="text-[17px] text-fg-muted leading-relaxed mb-8 max-w-lg">
-              How do you make ML algorithms work better? Not more data, not
-              bigger models. Better mechanics.
+            <p className="text-lg text-fg-muted leading-relaxed mb-8 max-w-lg">
+              I like figuring out how to make ML algorithms work better.
+              Not more data, not bigger models. Better mechanics.
             </p>
           </SectionHeader>
 
@@ -139,10 +127,10 @@ export function Work() {
                   href={paper.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-start justify-between gap-6 py-4 border-b border-[var(--divider)]"
+                  className="group flex items-start justify-between gap-6 py-4 border-b border-[var(--divider)] hover:border-accent/20 transition-colors duration-300"
                 >
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[17px] font-medium text-fg-primary leading-snug group-hover:text-fg-primary transition-colors duration-200">
+                    <h3 className="text-[17px] font-medium text-fg-primary leading-snug group-hover:text-accent transition-colors duration-200">
                       {paper.title}
                     </h3>
                     <p className="text-[15px] text-fg-muted leading-relaxed mt-1.5">
@@ -161,13 +149,13 @@ export function Work() {
         {/* Ventures */}
         <div id="ventures">
           <SectionHeader number="02" label="Ventures">
-            <p className="text-[17px] text-fg-muted leading-relaxed mb-8 max-w-lg">
-              Building products with{" "}
+            <p className="text-lg text-fg-muted leading-relaxed mb-8 max-w-lg">
+              Co-founded with{" "}
               <a
                 href="https://kirankannan.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-fg-secondary hover:text-fg-primary transition-colors duration-200 underline decoration-[var(--divider-strong)] underline-offset-[3px]"
+                className="text-fg-secondary hover:text-accent transition-colors duration-200 underline decoration-accent/20 underline-offset-[3px]"
               >
                 Kiran
               </a>{" "}
@@ -176,11 +164,11 @@ export function Work() {
                 href="https://portfolio.zezekay.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-fg-secondary hover:text-fg-primary transition-colors duration-200 underline decoration-[var(--divider-strong)] underline-offset-[3px]"
+                className="text-fg-secondary hover:text-accent transition-colors duration-200 underline decoration-accent/20 underline-offset-[3px]"
               >
                 Dharun
               </a>
-              . I run the technical side.
+              . I own the engineering end to end.
             </p>
           </SectionHeader>
 
@@ -190,10 +178,10 @@ export function Work() {
           >
             {ventures.map((v) => {
               const card = (
-                <div className="group rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] p-5 hover:border-[var(--card-border-hover)] hover:bg-[var(--card-hover-bg)] hover:-translate-y-0.5 transition-all duration-300 h-full">
-                  <div className="flex items-center justify-between mb-2">
+                <div className="group rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)] p-5 hover:border-accent/20 hover:bg-[var(--card-hover-bg)] hover:-translate-y-0.5 transition-all duration-300 h-full">
+                  <div className="flex items-center justify-between mb-2.5">
                     <div className="flex items-center gap-2.5">
-                      <h3 className="text-[17px] sm:text-lg font-medium text-fg-primary group-hover:text-fg-primary transition-colors duration-200">
+                      <h3 className="text-lg font-medium text-fg-primary group-hover:text-accent transition-colors duration-200">
                         {v.name}
                       </h3>
                       {v.live && (
@@ -205,11 +193,9 @@ export function Work() {
                         </span>
                       )}
                     </div>
-                    {v.link && (
-                      <div className="shrink-0">
-                        <Arrow />
-                      </div>
-                    )}
+                    <div className="shrink-0">
+                      <Arrow />
+                    </div>
                   </div>
                   <p className="text-[15px] text-fg-muted leading-relaxed">
                     {v.desc}
@@ -219,18 +205,14 @@ export function Work() {
 
               return (
                 <StaggerItem key={v.name}>
-                  {v.link ? (
-                    <a
-                      href={v.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block h-full"
-                    >
-                      {card}
-                    </a>
-                  ) : (
-                    card
-                  )}
+                  <a
+                    href={v.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full"
+                  >
+                    {card}
+                  </a>
                 </StaggerItem>
               );
             })}

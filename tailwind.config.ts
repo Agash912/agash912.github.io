@@ -5,7 +5,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -26,6 +25,10 @@ const config: Config = {
           primary: "rgb(var(--text-primary) / <alpha-value>)",
           secondary: "rgb(var(--text-secondary) / <alpha-value>)",
           muted: "rgb(var(--text-muted) / <alpha-value>)",
+        },
+        accent: {
+          DEFAULT: "rgb(var(--accent) / <alpha-value>)",
+          soft: "rgb(var(--accent-soft) / <alpha-value>)",
         },
       },
       letterSpacing: {
