@@ -45,9 +45,9 @@ export function Navigation() {
         <div className="max-w-3xl mx-auto px-6 py-5 flex justify-between items-center">
           <a
             href="#"
-            className="text-lg font-semibold tracking-tight text-fg-primary hover:text-accent transition-colors duration-200"
+            className="text-lg font-semibold tracking-tight text-accent transition-colors duration-200"
           >
-            Agash Uthayasuriyan<span className="text-accent">.</span>
+            Agash Uthayasuriyan.
           </a>
 
           <div className="flex items-center gap-6">

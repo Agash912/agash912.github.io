@@ -45,10 +45,10 @@ const ventures = [
     name: "Nedil AI",
     desc: "Real-time voice translation. Speak in your language, hear it back in 20+ others. Whisper, GPT-4, ElevenLabs. Live on the App Store.",
     live: true,
-    link: "https://apps.apple.com/us/app/nedil-ai/id6738028938",
+    link: "https://apps.apple.com/us/app/nedil-ai/id6757962583",
   },
   {
-    name: "ZeninAI",
+    name: "Zenin AI",
     desc: "AI voice agent that makes phone calls on your behalf. Appointments, reservations, inquiries. LangGraph + ElevenLabs + Twilio.",
     live: false,
     link: "https://github.com/TheStartUp-ADK/Voro",
